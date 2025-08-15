@@ -1,4 +1,4 @@
-export default {
+export const resume = {
   about: {
     name: "Chinnam Vamsee Krishna",
     email: "chinnamvamseekrishna@gmail.com",
@@ -132,4 +132,4 @@ export default {
       description: "Stood 1st in Ramanujan Maths Olympiad"
     }
   ]
-};
+} as const;
