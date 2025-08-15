@@ -61,8 +61,18 @@ export default function App() {
 
       <main>
         <Section title="About">
-          <p>{resume.about}</p>
-        </Section>
+  <div>
+    <p>{resume.about.bio}</p>
+    <ul className="mt-2 text-gray-700">
+      <li><strong>Email:</strong> {resume.about.email}</li>
+      <li><strong>Phone:</strong> {resume.about.phone}</li>
+      <li><strong>GitHub:</strong> <a href={resume.about.github} target="_blank" rel="noreferrer">{resume.about.github}</a></li>
+      <li><strong>LeetCode:</strong> <a href={resume.about.leetcode} target="_blank" rel="noreferrer">{resume.about.leetcode}</a></li>
+    </ul>
+  </div>
+</Section>
+
+        
 
         <Section title="Experience">
           {resume.experience.map((exp) => (
