@@ -1,5 +1,5 @@
 import React from 'react'
-import { resume } from './data/resume'
+import resume from './data/resume'
 
 const socialLinks = [
   { label: 'GitHub', url: import.meta.env.VITE_GITHUB_URL },
