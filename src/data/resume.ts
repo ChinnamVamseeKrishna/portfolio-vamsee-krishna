@@ -1,81 +1,135 @@
-export const resume = {
-  about: `Fullstack Engineer with a strong foundation in JavaScript, Java, Python, and C. Experienced in building scalable web applications, API integrations, and system design. Passionate about solving complex problems, optimizing performance, and delivering impactful digital solutions. Recipient of client and academic awards for outstanding contributions. Always eager to learn new technologies and take on challenging projects.`,
+export default {
+  about: {
+    name: "Chinnam Vamsee Krishna",
+    email: "chinnamvamseekrishna@gmail.com",
+    phone: "+91 8919666461",
+    links: {
+      github: "https://github.com/ChinnamVamseeKrishna",
+      leetcode: "https://leetcode.com/u/chinnamvamseekrishna/",
+      resume: "/resume.pdf"
+    },
+    bio: "Fullstack engineer with experience in Javascript, Java, Python, and expertise in both frontend and backend technologies. Experienced in building scalable applications with focus on optimization and user experience."
+  },
+
+  education: [
+    {
+      institution: "VFSTR",
+      degree: "B.Tech in Computer Science",
+      time: "July 2021",
+      location: "Guntur, AP",
+      cgpa: "8.6 / 10"
+    },
+    {
+      institution: "MATRIX IIT ACADEMY",
+      degree: "BIEAP INTERMEDIATE",
+      time: "June 2016",
+      location: "Guntur, AP",
+      percentage: "97.8%"
+    },
+    {
+      institution: "SRI CHAITANYA SCHOOL",
+      degree: "High School Diploma",
+      time: "June 2014",
+      location: "Sattenapalli, AP",
+      gpa: "10 / 10"
+    }
+  ],
+
+  coursework: [
+    "Object oriented Programming",
+    "Operating Systems",
+    "Data structures and Algorithms",
+    "Programming languages",
+    "Computer organization and architecture",
+    "Design and analysis of algorithms",
+    "Unix Tools and Scripting",
+    "Problem solving (Scaler Academy)",
+    "Analytical thinking (Scaler Academy)",
+    "Space and time complexities (Scaler Academy)",
+    "Advanced data structures (Scaler Academy)",
+    "SQL / NoSQL (Scaler Academy)",
+    "Low level design (Scaler Academy)",
+    "High level design (Scaler Academy)",
+    "React.js (Scaler Academy)",
+    "Node.js (Scaler Academy)"
+  ],
+
+  skills: {
+    programmingLanguages: ["Javascript", "Java", "Python", "C"],
+    frontendTechnologies: ["React.js", "HTML", "CSS", "Tailwind", "MUI", "Ant design", "Mantine"],
+    backendTechnologies: ["Node.js", "Flask"],
+    databases: ["MySQL", "SQL server", "PostgreSQL", "Mongo DB"],
+    systemDesign: ["Low Level Design", "High Level Design"],
+    testingFrameworks: ["Jest unit testing"],
+    miscellaneous: ["Data structures and Algorithms", "Schema Design", "Azure", "Machine Learning"]
+  },
+
   experience: [
     {
       company: "Grant Thornton",
       title: "Fullstack Engineer",
-      start: "Apr 2024",
-      end: "Present",
-      summary: "Building digital solutions to automate and optimize business processes.",
-      highlights: [
-        "Developed PACT, a solution automating purchase requests/orders—reducing the lifecycle to 1 week.",
-        "Revamped UI for improved customer interaction, leading to increased revenue.",
-        "Optimized API response times by 40% and achieved efficient cost reductions.",
-        "Updated DB schema and restructured queries for faster loads and reduced database load.",
-        "Strategically orchestrated zone-wise rollouts, utilizing Azure functions and SPN for prompt customer email triggers.",
-      ],
+      location: "Bangalore",
+      period: "Apr 2024 - Present",
+      bullets: [
+        "Developed a digital solution PACT that automates purchase request and purchase order life cycle at scale bringing it down to 1 week.",
+        "Engaged with stakeholders and revamped the user interface increasing customer interaction resulting in increased revenue.",
+        "Integrated optimization techniques that reduced the API response time by 40% and monitored resources continuously for efficient cost reduction.",
+        "Updated database schema and optimized asynchronous APIs through query restructuring resulting in reduced load on database and faster initial loads.",
+        "Orchestrated geographical zone-wise rollouts strategically using Azure functions as timer triggers with SPN to trigger prompt emails, increasing customer satisfaction."
+      ]
     },
     {
       company: "Cognizant",
       title: "Node.js Developer",
-      start: "Sep 2021",
-      end: "Aug 2023",
-      summary: "Developed and managed APIs for cross-platform apps, focusing on backend performance and reliability.",
-      highlights: [
-        "Designed/managed 25+ APIs for Site Connect, enabling timely release of Asset Log Book feature.",
-        "Integrated APIs with Android, iOS & Web for seamless multi-platform experience.",
-        "Achieved 98% code coverage using Jest; adhered to MVC pattern and regular backend query refinements for scalability.",
-        "Debugged and optimized DB performance using Knex and other npm libraries.",
-      ],
-    },
+      location: "Remote",
+      period: "Sep 2021 – Aug 2023",
+      bullets: [
+        "Designed and managed 25 APIs for enhancing Site Connect, a cross-platform application resulting in a timely release of the Asset Log Book feature.",
+        "Integrated the Node APIs with Android, iOS, and web applications for seamless user experience at the site level.",
+        "Adhered to MVC pattern and refined backend queries regularly for scalability achieving 98% code coverage with Jest unit testing framework.",
+        "Debugged and optimized database performance using npm libraries like knex, improving turnaround time with minimal resources."
+      ]
+    }
   ],
+
   projects: [
     {
-      name: "BMS Clone",
-      description: "Full stack Book My Show clone with authentication, RBAC, and API integration. Deployed to render.com.",
-      url: "", // Put your repo or live link here if you want
-      tags: ["React", "Node.js", "Ant Design", "RBAC", "API Integration"],
+      name: "BMS CLONE",
+      description: "Created an end to end working application, Book My Show, deployed to render.com gaining insights into full stack development and deployment.",
+      duration: "Jan 2021 – Apr 2021",
+      role: "Graduation Project",
+      links: {
+        github: "https://github.com/ChinnamVamseeKrishna/bookmyshow",
+        live: "https://bookmyshow-c0q5.onrender.com/"
+      },
+      highlights: [
+        "Implemented responsive user interface using Ant design and integrated secure password recovery through email OTP.",
+        "Covered a wide spectrum of concepts from authentication, RBAC to API integration."
+      ]
     },
     {
-      name: "Sports Hub",
-      description: "MERN stack app consolidating nearby store data, with cart and Stripe payment integration.",
-      url: "", // Put your repo or live link here if you want
-      tags: ["React", "Node.js", "MongoDB", "Stripe", "MERN"],
-    },
+      name: "SPORTS HUB",
+      description: "Engineered a web application exploring the complete MERN stack for end to end understanding.",
+      duration: "July 2020 – Sep 2020",
+      role: "Internship project",
+      highlights: [
+        "Programmed modules efficiently delivering pleasing output consolidating nearby store related data with location.",
+        "Integrated end to end checkout feature including cart and Stripe payment gateway.",
+        "Led peers as team lead to achieve expected results within timeline, earning spot recognition award."
+      ]
+    }
   ],
-  skills: [
-    "JavaScript", "Java", "Python", "C",
-    "React.js", "HTML", "CSS", "TailwindCSS", "MUI", "Ant Design", "Mantine",
-    "Node.js", "Flask",
-    "MySQL", "SQL Server", "PostgreSQL", "MongoDB",
-    "Low Level Design", "High Level Design",
-    "Jest", "Unit Testing",
-    "Data Structures & Algorithms", "Schema Design", "Azure", "Machine Learning"
-  ],
-  education: [
+
+  awards: [
     {
-      school: "VFSTR",
-      degree: "B.Tech in Computer Science",
-      year: "2021",
-      details: "CGPA: 8.6 / 10, Guntur, AP"
+      year: 2022,
+      title: "Best Work",
+      description: "Rewarded by client (FLSmidth) for successful go-live"
     },
     {
-      school: "Matrix IIT Academy",
-      degree: "BIEAP Intermediate",
-      year: "2016",
-      details: "Percentage: 97.8, Guntur, AP"
-    },
-    {
-      school: "Sri Chaitanya School",
-      degree: "Schooling",
-      year: "2014",
-      details: "GPA: 10 / 10, Sattenapalli, AP"
-    },
-    {
-      school: "Awards & Recognition",
-      degree: "",
-      year: "",
-      details: "2022: Best Work Rewarded by client (FLSmidth) for successful go-live; 2013: District Topper in Ramanujan Maths Olympiad"
-    },
-  ],
-} as const
+      year: 2013,
+      title: "District Topper",
+      description: "Stood 1st in Ramanujan Maths Olympiad"
+    }
+  ]
+};
